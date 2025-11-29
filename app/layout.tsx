@@ -11,11 +11,57 @@ const cairo = Cairo({
 })
 
 export const metadata: Metadata = {
-  title: "سدر الجوري - فوائد السدر للشعر والبشرة والجسم",
+  title: {
+    default: "سدر الجوري - منتجات السدر الطبيعية للشعر والبشرة",
+    template: "%s | سدر الجوري",
+  },
   description:
-    "سدر الجوري - اكتشف فوائد السدر الطبيعي للشعر والبشرة والجسم. منتجات السدر الأصلية - عسل السدر، زيت السدر، ومنتجات العناية الطبيعية",
-  keywords: "سدر الجوري، السدر، السدر للشعر، فوائد السدر، عسل السدر، زيت السدر، النبق، شجرة السدر",
-  generator: "v0.app",
+    "سدر الجوري - متجر السدر الطبيعي الأول في السعودية. اكتشف فوائد السدر للشعر والبشرة والجسم. عسل السدر الجبلي، زيت السدر، سدر مطحون، شامبو السدر ومنتجات طبيعية 100%",
+  keywords:
+    "سدر الجوري، السدر، سدر، السدر للشعر، فوائد السدر للشعر، ماسك السدر للشعر، عسل السدر، زيت السدر، النبق، شجرة السدر، سدر مطحون، شامبو السدر، ورق السدر، السدر للبشرة، السدر للوجه",
+  authors: [{ name: "سدر الجوري" }],
+  creator: "سدر الجوري",
+  publisher: "سدر الجوري",
+  formatDetection: {
+    telephone: false,
+  },
+  metadataBase: new URL("https://sidr-aljouri.com"),
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    locale: "ar_SA",
+    url: "https://sidr-aljouri.com",
+    siteName: "سدر الجوري",
+    title: "سدر الجوري - منتجات السدر الطبيعية للشعر والبشرة",
+    description: "متجر السدر الطبيعي الأول في السعودية. عسل السدر الجبلي، زيت السدر، سدر مطحون ومنتجات طبيعية 100%",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "سدر الجوري - منتجات السدر الطبيعية",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "سدر الجوري - منتجات السدر الطبيعية",
+    description: "متجر السدر الطبيعي الأول في السعودية. منتجات طبيعية 100% للشعر والبشرة",
+    images: ["/og-image.jpg"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
   icons: {
     icon: [
       {
@@ -33,11 +79,11 @@ export const metadata: Metadata = {
     ],
     apple: "/apple-icon.png",
   },
-  openGraph: {
-    title: "سدر الجوري - منتجات السدر الأصلية",
-    description: "اكتشف فوائد السدر الطبيعي للشعر والبشرة والجسم",
-    type: "website",
+  verification: {
+    google: "your-google-verification-code",
+    yandex: "your-yandex-verification-code",
   },
+    generator: 'v0.app'
 }
 
 export default function RootLayout({

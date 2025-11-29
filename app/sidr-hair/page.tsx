@@ -11,9 +11,35 @@ import Image from "next/image"
 export const metadata: Metadata = {
   title: "السدر للشعر - فوائد السدر للشعر وطريقة الاستخدام",
   description:
-    "اكتشف فوائد السدر للشعر، طريقة استخدام السدر للشعر، ماسك السدر للشعر، زيت السدر للشعر. منتجات السدر الطبيعية لشعر قوي وصحي",
+    "دليل شامل عن السدر للشعر: فوائد السدر للشعر، ماسك السدر للشعر، طريقة استخدام السدر للشعر، زيت السدر للشعر، سدر الشعر، مدة السدر على الشعر، شامبو السدر وورق السدر للشعر من سدر الجوري",
   keywords:
-    "السدر للشعر، فوائد السدر للشعر، ماسك السدر للشعر، طريقة السدر للشعر، زيت السدر للشعر، سدر مطحون للشعر، مدة السدر على الشعر",
+    "السدر للشعر، فوائد السدر للشعر، ماسك السدر للشعر، طريقة السدر للشعر، زيت السدر للشعر، سدر الشعر، مدة السدر على الشعر، سدر مطحون، شامبو السدر، ورق سدر، أوراق السدر، ورق السدر الأخضر، كم مدة السدر على الشعر",
+  openGraph: {
+    title: "السدر للشعر - فوائد وطريقة الاستخدام | سدر الجوري",
+    description:
+      "اكتشف فوائد السدر المذهلة للشعر. دليل شامل عن ماسك السدر، طريقة الاستخدام، المدة المناسبة. منتجات طبيعية 100%",
+    url: "https://sidr-aljouri.com/sidr-hair",
+    siteName: "سدر الجوري",
+    images: [
+      {
+        url: "/og-image-hair.jpg",
+        width: 1200,
+        height: 630,
+        alt: "السدر للشعر - فوائد السدر لتقوية الشعر ومنع التساقط",
+      },
+    ],
+    locale: "ar_SA",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "السدر للشعر - فوائد وطريقة الاستخدام",
+    description: "دليل شامل عن فوائد السدر للشعر وطريقة استخدام ماسك السدر للحصول على شعر قوي وصحي",
+    images: ["/og-image-hair.jpg"],
+  },
+  alternates: {
+    canonical: "https://sidr-aljouri.com/sidr-hair",
+  },
 }
 
 export default function SidrHairPage() {
@@ -42,7 +68,12 @@ export default function SidrHairPage() {
               </Button>
             </div>
             <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-2xl">
-              <Image src="/beautiful-healthy-hair-sidr-natural-treatment.jpg" alt="السدر للشعر" fill className="object-cover" />
+              <Image
+                src="/beautiful-healthy-hair-sidr-natural-treatment.jpg"
+                alt="السدر للشعر"
+                fill
+                className="object-cover"
+              />
             </div>
           </div>
         </div>

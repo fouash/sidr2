@@ -7,6 +7,40 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Sparkles, Heart, Star, ArrowLeft, CheckCircle2, Droplet, Sun } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "سدر الجوري - منتجات السدر الطبيعية للشعر والبشرة والجسم",
+  description:
+    "اكتشف منتجات السدر الطبيعية من سدر الجوري. عسل السدر الجبلي، زيت السدر للشعر، سدر مطحون، شامبو السدر الطبيعي. فوائد السدر للشعر والبشرة والجسم. منتجات طبيعية 100% بدون كيماويات",
+  keywords:
+    "السدر، سدر، سدر الجوري، فوائد السدر، السدر للشعر، السدر للبشرة، عسل السدر، زيت السدر، سدر مطحون، شامبو السدر، النبق، شجرة السدر، منتجات طبيعية",
+  openGraph: {
+    title: "سدر الجوري - منتجات السدر الطبيعية",
+    description: "عسل السدر الجبلي، زيت السدر، سدر مطحون ومنتجات طبيعية 100% للشعر والبشرة",
+    url: "https://sidr-aljouri.com",
+    siteName: "سدر الجوري",
+    images: [
+      {
+        url: "/og-image-home.jpg",
+        width: 1200,
+        height: 630,
+        alt: "منتجات السدر الطبيعية من سدر الجوري",
+      },
+    ],
+    locale: "ar_SA",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "سدر الجوري - منتجات السدر الطبيعية",
+    description: "عسل السدر الجبلي، زيت السدر، سدر مطحون ومنتجات طبيعية 100%",
+    images: ["/og-image-home.jpg"],
+  },
+  alternates: {
+    canonical: "https://sidr-aljouri.com",
+  },
+}
 
 export default function HomePage() {
   return (
@@ -49,7 +83,12 @@ export default function HomePage() {
               </div>
             </div>
             <div className="relative h-[400px] md:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
-              <Image src="/natural-sidr-tree-leaves-and-products-photography.jpg" alt="منتجات السدر الطبيعية" fill className="object-cover" />
+              <Image
+                src="/natural-sidr-tree-leaves-and-products-photography.jpg"
+                alt="منتجات السدر الطبيعية"
+                fill
+                className="object-cover"
+              />
             </div>
           </div>
         </div>

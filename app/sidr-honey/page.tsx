@@ -11,8 +11,33 @@ import Image from "next/image"
 export const metadata: Metadata = {
   title: "عسل السدر - فوائد عسل السدر الجبلي الأصلي",
   description:
-    "عسل السدر الجبلي الطبيعي 100%. اكتشف فوائد عسل السدر الصحية، طعمه المميز وجودته العالية. عسل سدرة أصلي ومضمون",
-  keywords: "عسل السدر، فوائد عسل السدر، عسل سدرة، عسل السدر الجبلي، عسل طبيعي، عسل أصلي",
+    "عسل السدر الجبلي الطبيعي 100% من سدر الجوري. اكتشف فوائد عسل السدر الصحية، طعمه المميز وجودته العالية. عسل سدرة أصلي ومضمون. أفخر أنواع العسل في العالم",
+  keywords: "عسل السدر، فوائد عسل السدر، عسل سدرة، عسل السدر الجبلي، عسل طبيعي، عسل أصلي، عسل سدر، سدر الجوري عسل",
+  openGraph: {
+    title: "عسل السدر الجبلي الأصلي | سدر الجوري",
+    description: "أفخر أنواع العسل في العالم. عسل السدر الطبيعي 100% بجودة عالية وطعم مميز. فوائد صحية مذهلة",
+    url: "https://sidr-aljouri.com/sidr-honey",
+    siteName: "سدر الجوري",
+    images: [
+      {
+        url: "/og-image-honey.jpg",
+        width: 1200,
+        height: 630,
+        alt: "عسل السدر الجبلي الأصلي من سدر الجوري",
+      },
+    ],
+    locale: "ar_SA",
+    type: "product",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "عسل السدر الجبلي الأصلي",
+    description: "أفخر أنواع العسل في العالم. عسل السدر الطبيعي 100% من سدر الجوري",
+    images: ["/og-image-honey.jpg"],
+  },
+  alternates: {
+    canonical: "https://sidr-aljouri.com/sidr-honey",
+  },
 }
 
 export default function SidrHoneyPage() {
@@ -48,7 +73,12 @@ export default function SidrHoneyPage() {
               </Button>
             </div>
             <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-2xl">
-              <Image src="/premium-sidr-honey-jar-golden-color-natural.jpg" alt="عسل السدر" fill className="object-cover" />
+              <Image
+                src="/premium-sidr-honey-jar-golden-color-natural.jpg"
+                alt="عسل السدر"
+                fill
+                className="object-cover"
+              />
             </div>
           </div>
         </div>
